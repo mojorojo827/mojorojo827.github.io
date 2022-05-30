@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600;1,800&display=swap" rel="stylesheet">
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+<style>
+    #playlist{
+        list-style: none;
+    }
+    #playlist li a{
+        color:black;
+        text-decoration: none;
+    }
+    #playlist .current-song a{
+        color:blue;
+    }
+</style>
+<body style="background-color:#008080; font-family: 'Courier New', Courier, monospace; font;">
+    <a href="desktop.html"><p style="color:azure"> <-back </p></a>
+        <audio src="" controls id="audioPlayer">
+            Sorry, your browser doesn't support html5!
+        </audio>
+        <ul id="playlist">
+            <li class="current-song"><a href="hotline.mp3">bLAck pARty- Hotline</a></li>
+            <li><a href="signs.mp3">Montell Fish - Show The Signs</a></li>
+            <li><a href="time.mp3">Elujay & J.Robb - WASTING MY TIME</a></li>
+        </ul>
+
+        <a href="https://open.spotify.com/playlist/6PwwaQqDFxFsVujmEzcKPP" target="blank"><p style="color: azure;"> Cick Here for full playlist (Spotify)</p></a>
+        <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="audioPlayer.js"></script>
+        <script>
+            // loads the audio player
+            audioPlayer();
+        </script>
+  
+  
+  
+  </body>
